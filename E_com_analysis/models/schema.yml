@@ -1,0 +1,32 @@
+version: 2
+
+models:
+    - name: dim_customers
+      description: Test for unique and null values
+      columns:
+        - name: CUSTOMER_ID
+          description: Primary key
+          tests:
+            - unique
+            - not_null
+    
+    - name: stg_transactional_sales
+      description: Test for unique and null values
+      columns:
+       - name: TRANSACTION_ID
+         description: Primary key
+         tests:
+          - unique
+          - not_null
+    
+    - name: sales_summary_by_date
+      description: Summary table by date
+      columns:
+        - name: total_sales
+          description: Total sales sold
+          tests:
+           - not_null
+        - name: total_quantity
+          description: Total quantity sold
+          tests:
+            - not_null

@@ -1,0 +1,23 @@
+WITH raw_customer AS (
+    SELECT 
+        CONCAT(SUBSTRING(CUSTOMER_ID, 0,4), SUBSTRING(STATE, 0,3), COALESCE(SUBSTRING(LAST_NAME, 0,3), 'OOO')) AS CUSTOMER_ID,
+        CUSTOMER_ID AS PRODUCT_ID,
+        FIRST_NAME,
+        LAST_NAME,
+        PHONE_NUMBER,
+        EMAIL,
+        ADDRESS,
+        CITY,
+        STATE,
+        COUNTRY,
+        POSTAL_CODE,
+        _FIVETRAN_SYNCED::TIMESTAMP AS FIVETRAN_SYNCED_DATE
+
+    FROM
+        {{ source('RAW_GOOGLE_DRIVE', 'CUSTOMER_DETAILS_DATA') }}
+)
+SELECT
+    *
+FROM
+    raw_customer
+

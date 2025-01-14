@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: RAW_GOOGLE_DRIVE
+    database: ECOMMERCE_SALES
+    schema: GOOGLE_DRIVE
+    tables:
+      - name: CUSTOMER_DETAILS_DATA
+        description: "Raw customer details data from Google Drive"
+      - name: PRODUCT_CATALOG_DATA
+        description: "Raw product catalog data from Google Drive"
+      - name: TRANSACTIONAL_SALES_DATA
+        description: "Raw transactiona sales data from Google Drive"
+
+  - name: RAW_LOCAL
+    database: ECOMMERCE_SALES
+    schema: LOCAL
+    tables:
+      - name: AIRCRAFT_DATA
+      - name: AIRPORTS_DATA
+      - name: BOOKINGS_DATA
+      - name: FLIGHT_DATA
+      - name: PASSENGERS_DATA
+

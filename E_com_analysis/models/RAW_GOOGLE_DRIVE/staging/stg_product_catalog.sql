@@ -1,0 +1,21 @@
+WITH raw_product AS (
+    SELECT
+        PRODUCT_ID,
+        PRODUCT_NAME,
+        PRICE,
+        BRAND,
+        CATEGORY,
+        WEIGHT,
+        QUANTITY_IN_STOCK,
+        DESCRIPTION,
+        COUNTRY_OF_ORIGIN,
+        EXPIRATION_DATE::DATE AS EXPIRATION_DATE,
+        _FIVETRAN_SYNCED::TIMESTAMP AS FIVETRAN_SYNCED_DATE
+    
+    FROM
+        {{ source('RAW_GOOGLE_DRIVE', 'PRODUCT_CATALOG_DATA') }}
+)
+SELECT
+    *
+FROM
+    raw_product

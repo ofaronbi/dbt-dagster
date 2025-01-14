@@ -1,0 +1,8 @@
+SELECT
+    fd.DEPARTURE_AIRPORT,
+    fd.ARRIVAL_AIRPORT,
+    COUNT(fd.FLIGHT_ID) AS TOTAL_FLIGHT,
+    SUM(bd.TICKET_PRICE) AS REVENUE
+FROM {{ ref("stg_flight") }} fd
+INNER JOIN {{ ref("stg_booking") }} bd ON fd.FLIGHT_NUMBER = bd.BOOKING_ID
+GROUP BY 1,2
