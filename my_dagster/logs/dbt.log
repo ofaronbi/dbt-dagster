@@ -128,3 +128,523 @@
 [0m01:28:32.118881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104960dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f5f4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106483fa0>]}
 [0m01:28:32.119742 [debug] [MainThread]: Flushing usage events
 [0m01:28:32.336588 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:38:33.888882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b3cd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107877310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107876f20>]}
+
+
+============================== 22:38:33.893452 | b934c033-b7a2-4c09-b6ae-49daf0f6f4c5 ==============================
+[0m22:38:33.893452 [info ] [MainThread]: Running with dbt=1.9.1
+[0m22:38:33.894152 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/opeyemifaronbi/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:38:33.917603 [info ] [MainThread]: dbt version: 1.9.1
+[0m22:38:33.918318 [info ] [MainThread]: python version: 3.10.5
+[0m22:38:33.918872 [info ] [MainThread]: python path: /Users/opeyemifaronbi/Desktop/dbt-dagster/venv/bin/python3
+[0m22:38:33.919378 [info ] [MainThread]: os info: macOS-15.2-x86_64-i386-64bit
+[0m22:38:34.157232 [info ] [MainThread]: Using profiles dir at /Users/opeyemifaronbi/.dbt
+[0m22:38:34.157743 [info ] [MainThread]: Using profiles.yml file at /Users/opeyemifaronbi/.dbt/profiles.yml
+[0m22:38:34.158151 [info ] [MainThread]: Using dbt_project.yml file at /Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml
+[0m22:38:34.158753 [info ] [MainThread]: adapter type: snowflake
+[0m22:38:34.159122 [info ] [MainThread]: adapter version: 1.9.0
+[0m22:38:34.159498 [info ] [MainThread]: Configuration:
+[0m22:38:34.159853 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:38:34.160205 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:38:34.160554 [info ] [MainThread]: Required dependencies:
+[0m22:38:34.160968 [debug] [MainThread]: Executing "git --help"
+[0m22:38:34.175583 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:38:34.176603 [debug] [MainThread]: STDERR: "b''"
+[0m22:38:34.177048 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:38:34.177509 [info ] [MainThread]: Connection:
+[0m22:38:34.177976 [info ] [MainThread]:   account: okaeful-cd43088
+[0m22:38:34.178389 [info ] [MainThread]:   user: dev
+[0m22:38:34.178780 [info ] [MainThread]:   database: ECOMMERCE_SALES
+[0m22:38:34.179169 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m22:38:34.179580 [info ] [MainThread]:   role: transform
+[0m22:38:34.179975 [info ] [MainThread]:   schema: dev
+[0m22:38:34.180370 [info ] [MainThread]:   authenticator: None
+[0m22:38:34.180783 [info ] [MainThread]:   oauth_client_id: None
+[0m22:38:34.181183 [info ] [MainThread]:   query_tag: None
+[0m22:38:34.181596 [info ] [MainThread]:   client_session_keep_alive: False
+[0m22:38:34.181988 [info ] [MainThread]:   host: None
+[0m22:38:34.182381 [info ] [MainThread]:   port: None
+[0m22:38:34.182776 [info ] [MainThread]:   proxy_host: None
+[0m22:38:34.183869 [info ] [MainThread]:   proxy_port: None
+[0m22:38:34.184350 [info ] [MainThread]:   protocol: None
+[0m22:38:34.184807 [info ] [MainThread]:   connect_retries: 1
+[0m22:38:34.185490 [info ] [MainThread]:   connect_timeout: None
+[0m22:38:34.185910 [info ] [MainThread]:   retry_on_database_errors: False
+[0m22:38:34.186393 [info ] [MainThread]:   retry_all: False
+[0m22:38:34.187053 [info ] [MainThread]:   insecure_mode: False
+[0m22:38:34.187511 [info ] [MainThread]:   reuse_connections: True
+[0m22:38:34.188395 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:38:34.335963 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:38:34.390976 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:38:34.391446 [debug] [MainThread]: On debug: select 1 as id
+[0m22:38:34.391803 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:38:35.006184 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.614 seconds
+[0m22:38:35.007749 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:38:35.008413 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:38:35.009005 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml> not found
+
+[0m22:38:35.010807 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.2154447, "process_in_blocks": "0", "process_kernel_time": 0.289949, "process_mem_max_rss": "117874688", "process_out_blocks": "0", "process_user_time": 1.803445}
+[0m22:38:35.011470 [debug] [MainThread]: Command `dbt debug` failed at 22:38:35.011319 after 1.22 seconds
+[0m22:38:35.012013 [debug] [MainThread]: Connection 'debug' was left open.
+[0m22:38:35.012486 [debug] [MainThread]: On debug: Close
+[0m22:38:35.125860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b3cd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10814fa00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084d7dc0>]}
+[0m22:38:35.126686 [debug] [MainThread]: Flushing usage events
+[0m22:38:35.370899 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:42:14.442832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11213cd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112e77100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112e76d10>]}
+
+
+============================== 22:42:14.448731 | 17fe47c6-1275-4379-9d22-1a75c946928c ==============================
+[0m22:42:14.448731 [info ] [MainThread]: Running with dbt=1.9.1
+[0m22:42:14.449563 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/opeyemifaronbi/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m22:42:14.471392 [info ] [MainThread]: dbt version: 1.9.1
+[0m22:42:14.472059 [info ] [MainThread]: python version: 3.10.5
+[0m22:42:14.472539 [info ] [MainThread]: python path: /Users/opeyemifaronbi/Desktop/dbt-dagster/venv/bin/python3
+[0m22:42:14.472980 [info ] [MainThread]: os info: macOS-15.2-x86_64-i386-64bit
+[0m22:42:14.717404 [info ] [MainThread]: Using profiles dir at /Users/opeyemifaronbi/.dbt
+[0m22:42:14.717975 [info ] [MainThread]: Using profiles.yml file at /Users/opeyemifaronbi/.dbt/profiles.yml
+[0m22:42:14.718459 [info ] [MainThread]: Using dbt_project.yml file at /Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml
+[0m22:42:14.719103 [info ] [MainThread]: adapter type: snowflake
+[0m22:42:14.719720 [info ] [MainThread]: adapter version: 1.9.0
+[0m22:42:14.720433 [info ] [MainThread]: Configuration:
+[0m22:42:14.720852 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:42:14.721294 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:42:14.721720 [info ] [MainThread]: Required dependencies:
+[0m22:42:14.722202 [debug] [MainThread]: Executing "git --help"
+[0m22:42:14.736230 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:42:14.737404 [debug] [MainThread]: STDERR: "b''"
+[0m22:42:14.737948 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:42:14.738437 [info ] [MainThread]: Connection:
+[0m22:42:14.738947 [info ] [MainThread]:   account: okaeful-cd43088
+[0m22:42:14.739383 [info ] [MainThread]:   user: dev
+[0m22:42:14.739798 [info ] [MainThread]:   database: ECOMMERCE_SALES
+[0m22:42:14.740214 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m22:42:14.740628 [info ] [MainThread]:   role: transform
+[0m22:42:14.741054 [info ] [MainThread]:   schema: dev
+[0m22:42:14.741559 [info ] [MainThread]:   authenticator: None
+[0m22:42:14.742025 [info ] [MainThread]:   oauth_client_id: None
+[0m22:42:14.742447 [info ] [MainThread]:   query_tag: None
+[0m22:42:14.742880 [info ] [MainThread]:   client_session_keep_alive: False
+[0m22:42:14.743279 [info ] [MainThread]:   host: None
+[0m22:42:14.743683 [info ] [MainThread]:   port: None
+[0m22:42:14.744082 [info ] [MainThread]:   proxy_host: None
+[0m22:42:14.744499 [info ] [MainThread]:   proxy_port: None
+[0m22:42:14.744921 [info ] [MainThread]:   protocol: None
+[0m22:42:14.745328 [info ] [MainThread]:   connect_retries: 1
+[0m22:42:14.745734 [info ] [MainThread]:   connect_timeout: None
+[0m22:42:14.746131 [info ] [MainThread]:   retry_on_database_errors: False
+[0m22:42:14.746529 [info ] [MainThread]:   retry_all: False
+[0m22:42:14.746933 [info ] [MainThread]:   insecure_mode: False
+[0m22:42:14.747331 [info ] [MainThread]:   reuse_connections: True
+[0m22:42:14.748170 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:42:14.889222 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:42:14.944115 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:42:14.944592 [debug] [MainThread]: On debug: select 1 as id
+[0m22:42:14.944981 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:42:15.635270 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.690 seconds
+[0m22:42:15.637165 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:42:15.637991 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:42:15.638614 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml> not found
+
+[0m22:42:15.640553 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.2993903, "process_in_blocks": "0", "process_kernel_time": 0.298456, "process_mem_max_rss": "117596160", "process_out_blocks": "0", "process_user_time": 1.831659}
+[0m22:42:15.641213 [debug] [MainThread]: Command `dbt debug` failed at 22:42:15.641062 after 1.30 seconds
+[0m22:42:15.641758 [debug] [MainThread]: Connection 'debug' was left open.
+[0m22:42:15.642228 [debug] [MainThread]: On debug: Close
+[0m22:42:15.811377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11213cd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11374cc70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c92230>]}
+[0m22:42:15.812273 [debug] [MainThread]: Flushing usage events
+[0m22:42:16.026642 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:43:17.764553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107528d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083b70a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083b6cb0>]}
+
+
+============================== 22:43:17.771760 | 5eac998b-f4ae-4bee-9dc6-ab16094ca10a ==============================
+[0m22:43:17.771760 [info ] [MainThread]: Running with dbt=1.9.1
+[0m22:43:17.772575 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/opeyemifaronbi/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:43:17.795632 [info ] [MainThread]: dbt version: 1.9.1
+[0m22:43:17.796294 [info ] [MainThread]: python version: 3.10.5
+[0m22:43:17.796836 [info ] [MainThread]: python path: /Users/opeyemifaronbi/Desktop/dbt-dagster/venv/bin/python3
+[0m22:43:17.797329 [info ] [MainThread]: os info: macOS-15.2-x86_64-i386-64bit
+[0m22:43:18.199410 [info ] [MainThread]: Using profiles dir at /Users/opeyemifaronbi/.dbt
+[0m22:43:18.200006 [info ] [MainThread]: Using profiles.yml file at /Users/opeyemifaronbi/.dbt/profiles.yml
+[0m22:43:18.200467 [info ] [MainThread]: Using dbt_project.yml file at /Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml
+[0m22:43:18.201328 [info ] [MainThread]: adapter type: snowflake
+[0m22:43:18.201823 [info ] [MainThread]: adapter version: 1.9.0
+[0m22:43:18.202287 [info ] [MainThread]: Configuration:
+[0m22:43:18.202758 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:43:18.203260 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:43:18.203770 [info ] [MainThread]: Required dependencies:
+[0m22:43:18.204359 [debug] [MainThread]: Executing "git --help"
+[0m22:43:18.229610 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:43:18.230928 [debug] [MainThread]: STDERR: "b''"
+[0m22:43:18.231532 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:43:18.232083 [info ] [MainThread]: Connection:
+[0m22:43:18.232780 [info ] [MainThread]:   account: okaeful-cd43088
+[0m22:43:18.233467 [info ] [MainThread]:   user: dev
+[0m22:43:18.233988 [info ] [MainThread]:   database: ECOMMERCE_SALES
+[0m22:43:18.234466 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m22:43:18.234961 [info ] [MainThread]:   role: transform
+[0m22:43:18.235466 [info ] [MainThread]:   schema: dev
+[0m22:43:18.236006 [info ] [MainThread]:   authenticator: None
+[0m22:43:18.236559 [info ] [MainThread]:   oauth_client_id: None
+[0m22:43:18.237078 [info ] [MainThread]:   query_tag: None
+[0m22:43:18.237564 [info ] [MainThread]:   client_session_keep_alive: False
+[0m22:43:18.238041 [info ] [MainThread]:   host: None
+[0m22:43:18.238541 [info ] [MainThread]:   port: None
+[0m22:43:18.239188 [info ] [MainThread]:   proxy_host: None
+[0m22:43:18.239710 [info ] [MainThread]:   proxy_port: None
+[0m22:43:18.240256 [info ] [MainThread]:   protocol: None
+[0m22:43:18.240875 [info ] [MainThread]:   connect_retries: 1
+[0m22:43:18.241456 [info ] [MainThread]:   connect_timeout: None
+[0m22:43:18.242052 [info ] [MainThread]:   retry_on_database_errors: False
+[0m22:43:18.242613 [info ] [MainThread]:   retry_all: False
+[0m22:43:18.243081 [info ] [MainThread]:   insecure_mode: False
+[0m22:43:18.243536 [info ] [MainThread]:   reuse_connections: True
+[0m22:43:18.244456 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:43:18.429683 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:43:18.500671 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:43:18.501362 [debug] [MainThread]: On debug: select 1 as id
+[0m22:43:18.501830 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:43:19.156149 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.654 seconds
+[0m22:43:19.157719 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:43:19.158388 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:43:19.159003 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml> not found
+
+[0m22:43:19.164712 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.5038155, "process_in_blocks": "0", "process_kernel_time": 0.454666, "process_mem_max_rss": "117915648", "process_out_blocks": "0", "process_user_time": 2.167305}
+[0m22:43:19.165576 [debug] [MainThread]: Command `dbt debug` failed at 22:43:19.165384 after 1.50 seconds
+[0m22:43:19.166267 [debug] [MainThread]: Connection 'debug' was left open.
+[0m22:43:19.166870 [debug] [MainThread]: On debug: Close
+[0m22:43:19.292673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107528d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e870d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108809840>]}
+[0m22:43:19.293587 [debug] [MainThread]: Flushing usage events
+[0m22:43:19.495300 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:43:50.953504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111d08d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b9b160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112b9ad70>]}
+
+
+============================== 22:43:50.958666 | d2eb13f5-fb99-4a19-ab63-1eb8a2bed567 ==============================
+[0m22:43:50.958666 [info ] [MainThread]: Running with dbt=1.9.1
+[0m22:43:50.959610 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/opeyemifaronbi/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:43:50.972450 [info ] [MainThread]: dbt version: 1.9.1
+[0m22:43:50.973038 [info ] [MainThread]: python version: 3.10.5
+[0m22:43:50.973498 [info ] [MainThread]: python path: /Users/opeyemifaronbi/Desktop/dbt-dagster/venv/bin/python3
+[0m22:43:50.973955 [info ] [MainThread]: os info: macOS-15.2-x86_64-i386-64bit
+[0m22:43:51.219579 [info ] [MainThread]: Using profiles dir at /Users/opeyemifaronbi/.dbt
+[0m22:43:51.220431 [info ] [MainThread]: Using profiles.yml file at /Users/opeyemifaronbi/.dbt/profiles.yml
+[0m22:43:51.220951 [info ] [MainThread]: Using dbt_project.yml file at /Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml
+[0m22:43:51.221659 [info ] [MainThread]: adapter type: snowflake
+[0m22:43:51.222067 [info ] [MainThread]: adapter version: 1.9.0
+[0m22:43:51.222479 [info ] [MainThread]: Configuration:
+[0m22:43:51.222875 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:43:51.223251 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:43:51.223628 [info ] [MainThread]: Required dependencies:
+[0m22:43:51.224034 [debug] [MainThread]: Executing "git --help"
+[0m22:43:51.238475 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:43:51.239730 [debug] [MainThread]: STDERR: "b''"
+[0m22:43:51.240375 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:43:51.240979 [info ] [MainThread]: Connection:
+[0m22:43:51.241557 [info ] [MainThread]:   account: okaeful-cd43088
+[0m22:43:51.242028 [info ] [MainThread]:   user: dev
+[0m22:43:51.242471 [info ] [MainThread]:   database: ECOMMERCE_SALES
+[0m22:43:51.242922 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m22:43:51.243373 [info ] [MainThread]:   role: transform
+[0m22:43:51.243816 [info ] [MainThread]:   schema: dev
+[0m22:43:51.244271 [info ] [MainThread]:   authenticator: None
+[0m22:43:51.244722 [info ] [MainThread]:   oauth_client_id: None
+[0m22:43:51.245176 [info ] [MainThread]:   query_tag: None
+[0m22:43:51.245628 [info ] [MainThread]:   client_session_keep_alive: False
+[0m22:43:51.246230 [info ] [MainThread]:   host: None
+[0m22:43:51.246732 [info ] [MainThread]:   port: None
+[0m22:43:51.247184 [info ] [MainThread]:   proxy_host: None
+[0m22:43:51.247623 [info ] [MainThread]:   proxy_port: None
+[0m22:43:51.248068 [info ] [MainThread]:   protocol: None
+[0m22:43:51.248507 [info ] [MainThread]:   connect_retries: 1
+[0m22:43:51.248947 [info ] [MainThread]:   connect_timeout: None
+[0m22:43:51.249386 [info ] [MainThread]:   retry_on_database_errors: False
+[0m22:43:51.249982 [info ] [MainThread]:   retry_all: False
+[0m22:43:51.250444 [info ] [MainThread]:   insecure_mode: False
+[0m22:43:51.251110 [info ] [MainThread]:   reuse_connections: True
+[0m22:43:51.252812 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:43:51.408002 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:43:51.445275 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:43:51.445745 [debug] [MainThread]: On debug: select 1 as id
+[0m22:43:51.446112 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:43:51.949293 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.503 seconds
+[0m22:43:51.951167 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:43:51.951836 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:43:51.952429 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml> not found
+
+[0m22:43:51.954621 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.0996823, "process_in_blocks": "0", "process_kernel_time": 0.282687, "process_mem_max_rss": "118255616", "process_out_blocks": "0", "process_user_time": 1.905936}
+[0m22:43:51.955356 [debug] [MainThread]: Command `dbt debug` failed at 22:43:51.955188 after 1.10 seconds
+[0m22:43:51.955967 [debug] [MainThread]: Connection 'debug' was left open.
+[0m22:43:51.956502 [debug] [MainThread]: On debug: Close
+[0m22:43:52.080403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111d08d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113465ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113827d30>]}
+[0m22:43:52.081173 [debug] [MainThread]: Flushing usage events
+[0m22:43:52.296614 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:44:14.119346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d2cdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bbb0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bbace0>]}
+
+
+============================== 22:44:14.124999 | 3653ea7d-f03b-4e83-ad3e-dbe1f3b1396a ==============================
+[0m22:44:14.124999 [info ] [MainThread]: Running with dbt=1.9.1
+[0m22:44:14.125837 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/opeyemifaronbi/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m22:44:14.138483 [info ] [MainThread]: dbt version: 1.9.1
+[0m22:44:14.139071 [info ] [MainThread]: python version: 3.10.5
+[0m22:44:14.139539 [info ] [MainThread]: python path: /Users/opeyemifaronbi/Desktop/dbt-dagster/venv/bin/python3
+[0m22:44:14.140004 [info ] [MainThread]: os info: macOS-15.2-x86_64-i386-64bit
+[0m22:44:14.425641 [info ] [MainThread]: Using profiles dir at /Users/opeyemifaronbi/.dbt
+[0m22:44:14.426165 [info ] [MainThread]: Using profiles.yml file at /Users/opeyemifaronbi/.dbt/profiles.yml
+[0m22:44:14.426539 [info ] [MainThread]: Using dbt_project.yml file at /Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml
+[0m22:44:14.427116 [info ] [MainThread]: adapter type: snowflake
+[0m22:44:14.427491 [info ] [MainThread]: adapter version: 1.9.0
+[0m22:44:14.427870 [info ] [MainThread]: Configuration:
+[0m22:44:14.428227 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:44:14.428582 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:44:14.428934 [info ] [MainThread]: Required dependencies:
+[0m22:44:14.429344 [debug] [MainThread]: Executing "git --help"
+[0m22:44:14.441266 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:44:14.442362 [debug] [MainThread]: STDERR: "b''"
+[0m22:44:14.442929 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:44:14.443433 [info ] [MainThread]: Connection:
+[0m22:44:14.443947 [info ] [MainThread]:   account: okaeful-cd43088
+[0m22:44:14.444388 [info ] [MainThread]:   user: dev
+[0m22:44:14.444795 [info ] [MainThread]:   database: ECOMMERCE_SALES
+[0m22:44:14.445200 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m22:44:14.445604 [info ] [MainThread]:   role: transform
+[0m22:44:14.446004 [info ] [MainThread]:   schema: dev
+[0m22:44:14.446417 [info ] [MainThread]:   authenticator: None
+[0m22:44:14.446827 [info ] [MainThread]:   oauth_client_id: None
+[0m22:44:14.447236 [info ] [MainThread]:   query_tag: None
+[0m22:44:14.447642 [info ] [MainThread]:   client_session_keep_alive: False
+[0m22:44:14.448047 [info ] [MainThread]:   host: None
+[0m22:44:14.448450 [info ] [MainThread]:   port: None
+[0m22:44:14.448857 [info ] [MainThread]:   proxy_host: None
+[0m22:44:14.449268 [info ] [MainThread]:   proxy_port: None
+[0m22:44:14.449856 [info ] [MainThread]:   protocol: None
+[0m22:44:14.450386 [info ] [MainThread]:   connect_retries: 1
+[0m22:44:14.450902 [info ] [MainThread]:   connect_timeout: None
+[0m22:44:14.451364 [info ] [MainThread]:   retry_on_database_errors: False
+[0m22:44:14.451830 [info ] [MainThread]:   retry_all: False
+[0m22:44:14.452284 [info ] [MainThread]:   insecure_mode: False
+[0m22:44:14.452730 [info ] [MainThread]:   reuse_connections: True
+[0m22:44:14.453617 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:44:14.598091 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:44:14.645721 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:44:14.646170 [debug] [MainThread]: On debug: select 1 as id
+[0m22:44:14.646534 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:44:15.284214 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.638 seconds
+[0m22:44:15.285950 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:44:15.286749 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:44:15.287348 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml> not found
+
+[0m22:44:15.289296 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.2723354, "process_in_blocks": "0", "process_kernel_time": 0.300058, "process_mem_max_rss": "118071296", "process_out_blocks": "0", "process_user_time": 1.881274}
+[0m22:44:15.289983 [debug] [MainThread]: Command `dbt debug` failed at 22:44:15.289831 after 1.27 seconds
+[0m22:44:15.290545 [debug] [MainThread]: Connection 'debug' was left open.
+[0m22:44:15.291038 [debug] [MainThread]: On debug: Close
+[0m22:44:15.407971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104d2cdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064274f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10684bfa0>]}
+[0m22:44:15.408871 [debug] [MainThread]: Flushing usage events
+[0m22:44:15.610358 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:47:28.644486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d084df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ddbf100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ddbed10>]}
+
+
+============================== 22:47:28.651798 | 7051f38a-9d34-46af-ac6c-e42c71174087 ==============================
+[0m22:47:28.651798 [info ] [MainThread]: Running with dbt=1.9.1
+[0m22:47:28.652717 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/opeyemifaronbi/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m22:47:28.674810 [info ] [MainThread]: dbt version: 1.9.1
+[0m22:47:28.675394 [info ] [MainThread]: python version: 3.10.5
+[0m22:47:28.675860 [info ] [MainThread]: python path: /Users/opeyemifaronbi/Desktop/dbt-dagster/venv/bin/python3
+[0m22:47:28.676319 [info ] [MainThread]: os info: macOS-15.2-x86_64-i386-64bit
+[0m22:47:29.098637 [info ] [MainThread]: Using profiles dir at /Users/opeyemifaronbi/.dbt
+[0m22:47:29.099145 [info ] [MainThread]: Using profiles.yml file at /Users/opeyemifaronbi/.dbt/profiles.yml
+[0m22:47:29.099516 [info ] [MainThread]: Using dbt_project.yml file at /Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml
+[0m22:47:29.100771 [info ] [MainThread]: adapter type: snowflake
+[0m22:47:29.101417 [info ] [MainThread]: adapter version: 1.9.0
+[0m22:47:29.101983 [info ] [MainThread]: Configuration:
+[0m22:47:29.102683 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:47:29.103278 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:47:29.103732 [info ] [MainThread]: Required dependencies:
+[0m22:47:29.104235 [debug] [MainThread]: Executing "git --help"
+[0m22:47:29.118811 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:47:29.120101 [debug] [MainThread]: STDERR: "b''"
+[0m22:47:29.120745 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:47:29.121289 [info ] [MainThread]: Connection:
+[0m22:47:29.121828 [info ] [MainThread]:   account: okaeful-cd43088
+[0m22:47:29.122282 [info ] [MainThread]:   user: dev
+[0m22:47:29.122716 [info ] [MainThread]:   database: ECOMMERCE_SALES
+[0m22:47:29.123154 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m22:47:29.123717 [info ] [MainThread]:   role: transform
+[0m22:47:29.124292 [info ] [MainThread]:   schema: dev
+[0m22:47:29.124768 [info ] [MainThread]:   authenticator: None
+[0m22:47:29.125202 [info ] [MainThread]:   oauth_client_id: None
+[0m22:47:29.125632 [info ] [MainThread]:   query_tag: None
+[0m22:47:29.126066 [info ] [MainThread]:   client_session_keep_alive: False
+[0m22:47:29.126644 [info ] [MainThread]:   host: None
+[0m22:47:29.127190 [info ] [MainThread]:   port: None
+[0m22:47:29.127668 [info ] [MainThread]:   proxy_host: None
+[0m22:47:29.128111 [info ] [MainThread]:   proxy_port: None
+[0m22:47:29.128544 [info ] [MainThread]:   protocol: None
+[0m22:47:29.128972 [info ] [MainThread]:   connect_retries: 1
+[0m22:47:29.129394 [info ] [MainThread]:   connect_timeout: None
+[0m22:47:29.129818 [info ] [MainThread]:   retry_on_database_errors: False
+[0m22:47:29.130238 [info ] [MainThread]:   retry_all: False
+[0m22:47:29.130662 [info ] [MainThread]:   insecure_mode: False
+[0m22:47:29.131090 [info ] [MainThread]:   reuse_connections: True
+[0m22:47:29.131972 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:47:29.286834 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:47:29.346775 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:47:29.347335 [debug] [MainThread]: On debug: select 1 as id
+[0m22:47:29.347768 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:47:29.963208 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.615 seconds
+[0m22:47:29.965050 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:47:29.965735 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:47:29.966337 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml> not found
+
+[0m22:47:29.968431 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.4288555, "process_in_blocks": "0", "process_kernel_time": 0.428428, "process_mem_max_rss": "117968896", "process_out_blocks": "0", "process_user_time": 2.152921}
+[0m22:47:29.969157 [debug] [MainThread]: Command `dbt debug` failed at 22:47:29.968992 after 1.43 seconds
+[0m22:47:29.969830 [debug] [MainThread]: Connection 'debug' was left open.
+[0m22:47:29.970363 [debug] [MainThread]: On debug: Close
+[0m22:47:30.106088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d084df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd71cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ea1fd30>]}
+[0m22:47:30.106990 [debug] [MainThread]: Flushing usage events
+[0m22:47:30.334905 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:47:42.989299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ddb0df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec43040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec42c50>]}
+
+
+============================== 22:47:42.994282 | f7932131-012d-427a-b8fc-7bdac9d41523 ==============================
+[0m22:47:42.994282 [info ] [MainThread]: Running with dbt=1.9.1
+[0m22:47:42.995028 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/opeyemifaronbi/.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:47:43.006618 [info ] [MainThread]: dbt version: 1.9.1
+[0m22:47:43.007281 [info ] [MainThread]: python version: 3.10.5
+[0m22:47:43.007833 [info ] [MainThread]: python path: /Users/opeyemifaronbi/Desktop/dbt-dagster/venv/bin/python3
+[0m22:47:43.008312 [info ] [MainThread]: os info: macOS-15.2-x86_64-i386-64bit
+[0m22:47:43.256231 [info ] [MainThread]: Using profiles dir at /Users/opeyemifaronbi/.dbt
+[0m22:47:43.256780 [info ] [MainThread]: Using profiles.yml file at /Users/opeyemifaronbi/.dbt/profiles.yml
+[0m22:47:43.257187 [info ] [MainThread]: Using dbt_project.yml file at /Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml
+[0m22:47:43.257738 [info ] [MainThread]: adapter type: snowflake
+[0m22:47:43.258146 [info ] [MainThread]: adapter version: 1.9.0
+[0m22:47:43.258560 [info ] [MainThread]: Configuration:
+[0m22:47:43.258908 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:47:43.259254 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:47:43.259598 [info ] [MainThread]: Required dependencies:
+[0m22:47:43.260001 [debug] [MainThread]: Executing "git --help"
+[0m22:47:43.272452 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:47:43.273533 [debug] [MainThread]: STDERR: "b''"
+[0m22:47:43.274089 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:47:43.274604 [info ] [MainThread]: Connection:
+[0m22:47:43.275131 [info ] [MainThread]:   account: okaeful-cd43088
+[0m22:47:43.275567 [info ] [MainThread]:   user: dev
+[0m22:47:43.275989 [info ] [MainThread]:   database: ECOMMERCE_SALES
+[0m22:47:43.276411 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m22:47:43.276830 [info ] [MainThread]:   role: transform
+[0m22:47:43.277250 [info ] [MainThread]:   schema: dev
+[0m22:47:43.277670 [info ] [MainThread]:   authenticator: None
+[0m22:47:43.278091 [info ] [MainThread]:   oauth_client_id: None
+[0m22:47:43.278523 [info ] [MainThread]:   query_tag: None
+[0m22:47:43.279130 [info ] [MainThread]:   client_session_keep_alive: False
+[0m22:47:43.279677 [info ] [MainThread]:   host: None
+[0m22:47:43.280122 [info ] [MainThread]:   port: None
+[0m22:47:43.280553 [info ] [MainThread]:   proxy_host: None
+[0m22:47:43.280983 [info ] [MainThread]:   proxy_port: None
+[0m22:47:43.281419 [info ] [MainThread]:   protocol: None
+[0m22:47:43.281879 [info ] [MainThread]:   connect_retries: 1
+[0m22:47:43.282349 [info ] [MainThread]:   connect_timeout: None
+[0m22:47:43.282808 [info ] [MainThread]:   retry_on_database_errors: False
+[0m22:47:43.283251 [info ] [MainThread]:   retry_all: False
+[0m22:47:43.283751 [info ] [MainThread]:   insecure_mode: False
+[0m22:47:43.284372 [info ] [MainThread]:   reuse_connections: True
+[0m22:47:43.285877 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:47:43.432696 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:47:43.470488 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:47:43.470952 [debug] [MainThread]: On debug: select 1 as id
+[0m22:47:43.471317 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:47:44.047095 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.576 seconds
+[0m22:47:44.048959 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:47:44.049622 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:47:44.050237 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml> not found
+
+[0m22:47:44.052361 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.157987, "process_in_blocks": "0", "process_kernel_time": 0.265371, "process_mem_max_rss": "118591488", "process_out_blocks": "0", "process_user_time": 1.85121}
+[0m22:47:44.053151 [debug] [MainThread]: Command `dbt debug` failed at 22:47:44.052979 after 1.16 seconds
+[0m22:47:44.053776 [debug] [MainThread]: Connection 'debug' was left open.
+[0m22:47:44.054412 [debug] [MainThread]: On debug: Close
+[0m22:47:44.189736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ddb0df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f3ab130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f8cffa0>]}
+[0m22:47:44.190696 [debug] [MainThread]: Flushing usage events
+[0m22:47:44.396613 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:54:41.761302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109714d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5a3100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5a2d10>]}
+
+
+============================== 22:54:41.768747 | c35f480f-a935-4b08-b9cf-648b80e793a4 ==============================
+[0m22:54:41.768747 [info ] [MainThread]: Running with dbt=1.9.1
+[0m22:54:41.769589 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/opeyemifaronbi/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m22:54:41.794243 [info ] [MainThread]: dbt version: 1.9.1
+[0m22:54:41.794851 [info ] [MainThread]: python version: 3.10.5
+[0m22:54:41.795338 [info ] [MainThread]: python path: /Users/opeyemifaronbi/Desktop/dbt-dagster/venv/bin/python3
+[0m22:54:41.795822 [info ] [MainThread]: os info: macOS-15.2-x86_64-i386-64bit
+[0m22:54:42.237973 [info ] [MainThread]: Using profiles dir at /Users/opeyemifaronbi/.dbt
+[0m22:54:42.238464 [info ] [MainThread]: Using profiles.yml file at /Users/opeyemifaronbi/.dbt/profiles.yml
+[0m22:54:42.238862 [info ] [MainThread]: Using dbt_project.yml file at /Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml
+[0m22:54:42.240085 [info ] [MainThread]: adapter type: snowflake
+[0m22:54:42.240636 [info ] [MainThread]: adapter version: 1.9.0
+[0m22:54:42.241104 [info ] [MainThread]: Configuration:
+[0m22:54:42.241470 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:54:42.241857 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m22:54:42.242226 [info ] [MainThread]: Required dependencies:
+[0m22:54:42.242663 [debug] [MainThread]: Executing "git --help"
+[0m22:54:42.271530 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:54:42.272873 [debug] [MainThread]: STDERR: "b''"
+[0m22:54:42.273445 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:54:42.273974 [info ] [MainThread]: Connection:
+[0m22:54:42.274509 [info ] [MainThread]:   account: okaeful-cd43088
+[0m22:54:42.274986 [info ] [MainThread]:   user: dev
+[0m22:54:42.275416 [info ] [MainThread]:   database: ECOMMERCE_SALES
+[0m22:54:42.275846 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m22:54:42.276269 [info ] [MainThread]:   role: transform
+[0m22:54:42.276691 [info ] [MainThread]:   schema: dev
+[0m22:54:42.277112 [info ] [MainThread]:   authenticator: None
+[0m22:54:42.277535 [info ] [MainThread]:   oauth_client_id: None
+[0m22:54:42.277971 [info ] [MainThread]:   query_tag: None
+[0m22:54:42.278425 [info ] [MainThread]:   client_session_keep_alive: False
+[0m22:54:42.278888 [info ] [MainThread]:   host: None
+[0m22:54:42.279345 [info ] [MainThread]:   port: None
+[0m22:54:42.279803 [info ] [MainThread]:   proxy_host: None
+[0m22:54:42.280236 [info ] [MainThread]:   proxy_port: None
+[0m22:54:42.280661 [info ] [MainThread]:   protocol: None
+[0m22:54:42.281095 [info ] [MainThread]:   connect_retries: 1
+[0m22:54:42.281520 [info ] [MainThread]:   connect_timeout: None
+[0m22:54:42.281948 [info ] [MainThread]:   retry_on_database_errors: False
+[0m22:54:42.282374 [info ] [MainThread]:   retry_all: False
+[0m22:54:42.282817 [info ] [MainThread]:   insecure_mode: False
+[0m22:54:42.283358 [info ] [MainThread]:   reuse_connections: True
+[0m22:54:42.284630 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m22:54:42.445008 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:54:42.506035 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:54:42.506600 [debug] [MainThread]: On debug: select 1 as id
+[0m22:54:42.507041 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:54:43.078382 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.571 seconds
+[0m22:54:43.080248 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:54:43.080913 [info ] [MainThread]: [31m1 check failed:[0m
+[0m22:54:43.081511 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/dbt_project.yml> not found
+
+[0m22:54:43.085761 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.4320859, "process_in_blocks": "0", "process_kernel_time": 0.456874, "process_mem_max_rss": "118448128", "process_out_blocks": "0", "process_user_time": 2.135216}
+[0m22:54:43.086752 [debug] [MainThread]: Command `dbt debug` failed at 22:54:43.086549 after 1.43 seconds
+[0m22:54:43.087412 [debug] [MainThread]: Connection 'debug' was left open.
+[0m22:54:43.087994 [debug] [MainThread]: On debug: Close
+[0m22:54:43.235782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109714d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5563b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b233f40>]}
+[0m22:54:43.236731 [debug] [MainThread]: Flushing usage events
+[0m22:54:43.463838 [debug] [MainThread]: An error was encountered while trying to flush usage events

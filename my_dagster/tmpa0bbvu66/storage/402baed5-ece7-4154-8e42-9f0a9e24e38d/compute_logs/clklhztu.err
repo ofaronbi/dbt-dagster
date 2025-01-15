@@ -1,0 +1,81 @@
+[32m2025-01-14 23:01:21 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 402baed5-ece7-4154-8e42-9f0a9e24e38d - 5321 - LOGS_CAPTURED - Started capturing logs in process (pid: 5321).
+[32m2025-01-14 23:01:21 -0500[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 402baed5-ece7-4154-8e42-9f0a9e24e38d - 5321 - E_com_analysis_dbt_assets - STEP_START - Started execution of step "E_com_analysis_dbt_assets".
+[32m2025-01-14 23:01:21 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - 402baed5-ece7-4154-8e42-9f0a9e24e38d - E_com_analysis_dbt_assets - A dbt subsetted execution is being performed. Overriding default dbt selection arguments `['--select', 'fqn:*']` with arguments: `['E_com_analysis.RAW_LOCAL.Booking_Trends.booking_trends']`.
+INFO:dagster.builtin:__ASSET_JOB - 402baed5-ece7-4154-8e42-9f0a9e24e38d - E_com_analysis_dbt_assets - A dbt subsetted execution is being performed. Overriding default dbt selection arguments `['--select', 'fqn:*']` with arguments: `['E_com_analysis.RAW_LOCAL.Booking_Trends.booking_trends']`.
+[32m2025-01-14 23:01:21 -0500[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 402baed5-ece7-4154-8e42-9f0a9e24e38d - E_com_analysis_dbt_assets - An error was encountered when creating a handle to the dbt adapter in Dagster.
+Traceback (most recent call last):
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster_dbt/core/resource.py", line 672, in cli
+    adapter = self._initialize_adapter(cli_vars)
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster_dbt/core/resource.py", line 364, in _initialize_adapter
+    profile = load_profile(self.project_dir, cli_vars, self.profile, self.target)
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dbt/config/runtime.py", line 79, in load_profile
+    profile = Profile.render(
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dbt/config/profile.py", line 402, in render
+    return cls.from_raw_profiles(
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dbt/config/profile.py", line 359, in from_raw_profiles
+    raise DbtProjectError("Could not find profile named '{}'".format(profile_name))
+dbt.exceptions.DbtProjectError: Runtime Error
+  Could not find profile named 'E_com_analysis'
+WARNING:dagster.builtin:__ASSET_JOB - 402baed5-ece7-4154-8e42-9f0a9e24e38d - E_com_analysis_dbt_assets - An error was encountered when creating a handle to the dbt adapter in Dagster.
+Traceback (most recent call last):
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster_dbt/core/resource.py", line 672, in cli
+    adapter = self._initialize_adapter(cli_vars)
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster_dbt/core/resource.py", line 364, in _initialize_adapter
+    profile = load_profile(self.project_dir, cli_vars, self.profile, self.target)
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dbt/config/runtime.py", line 79, in load_profile
+    profile = Profile.render(
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dbt/config/profile.py", line 402, in render
+    return cls.from_raw_profiles(
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dbt/config/profile.py", line 359, in from_raw_profiles
+    raise DbtProjectError("Could not find profile named '{}'".format(profile_name))
+dbt.exceptions.DbtProjectError: Runtime Error
+  Could not find profile named 'E_com_analysis'
+[32m2025-01-14 23:01:21 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - 402baed5-ece7-4154-8e42-9f0a9e24e38d - E_com_analysis_dbt_assets - Copying `/Users/opeyemifaronbi/Desktop/dbt-dagster/E_com_analysis/target/partial_parse.msgpack` to `/Users/opeyemifaronbi/Desktop/dbt-dagster/E_com_analysis/target/E_com_analysis_dbt_assets-402baed-7525ee0/partial_parse.msgpack` to take advantage of partial parsing.
+INFO:dagster.builtin:__ASSET_JOB - 402baed5-ece7-4154-8e42-9f0a9e24e38d - E_com_analysis_dbt_assets - Copying `/Users/opeyemifaronbi/Desktop/dbt-dagster/E_com_analysis/target/partial_parse.msgpack` to `/Users/opeyemifaronbi/Desktop/dbt-dagster/E_com_analysis/target/E_com_analysis_dbt_assets-402baed-7525ee0/partial_parse.msgpack` to take advantage of partial parsing.
+[32m2025-01-14 23:01:21 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - 402baed5-ece7-4154-8e42-9f0a9e24e38d - E_com_analysis_dbt_assets - Running dbt command: `dbt build --select E_com_analysis.RAW_LOCAL.Booking_Trends.booking_trends`.
+INFO:dagster.builtin:__ASSET_JOB - 402baed5-ece7-4154-8e42-9f0a9e24e38d - E_com_analysis_dbt_assets - Running dbt command: `dbt build --select E_com_analysis.RAW_LOCAL.Booking_Trends.booking_trends`.
+[32m2025-01-14 23:01:28 -0500[0m - dagster - [34mINFO[0m - __ASSET_JOB - 402baed5-ece7-4154-8e42-9f0a9e24e38d - E_com_analysis_dbt_assets - Finished dbt command: `dbt build --select E_com_analysis.RAW_LOCAL.Booking_Trends.booking_trends`.
+INFO:dagster.builtin:__ASSET_JOB - 402baed5-ece7-4154-8e42-9f0a9e24e38d - E_com_analysis_dbt_assets - Finished dbt command: `dbt build --select E_com_analysis.RAW_LOCAL.Booking_Trends.booking_trends`.
+[32m2025-01-14 23:01:28 -0500[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - 402baed5-ece7-4154-8e42-9f0a9e24e38d - 5321 - E_com_analysis_dbt_assets - STEP_FAILURE - Execution of step "E_com_analysis_dbt_assets" failed.
+
+dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt build --select E_com_analysis.RAW_LOCAL.Booking_Trends.booking_trends`
+
+failed with exit code `1`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: /Users/opeyemifaronbi/Desktop/dbt-dagster/E_com_analysis/target/E_com_analysis_dbt_assets-402baed-7525ee0/dbt.log.
+
+Errors parsed from dbt logs:
+
+1 of 1 ERROR creating sql view model AIR.booking_trends ........................ [[31mERROR[0m in 0.24s]
+
+  Database Error in model booking_trends (models/RAW_LOCAL/Booking_Trends/booking_trends.sql)
+  002140 (42601): SQL compilation error:
+  Unknown function FORMAT
+  compiled code at target/E_com_analysis_dbt_assets-402baed-7525ee0/run/E_com_analysis/models/RAW_LOCAL/Booking_Trends/booking_trends.sql
+
+Stack Trace:
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster/_core/execution/plan/execute_plan.py", line 245, in dagster_event_sequence_for_step
+    for step_event in check.generator(step_events):
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster/_core/execution/plan/execute_step.py", line 500, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster/_core/execution/plan/execute_step.py", line 183, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster/_core/execution/plan/execute_step.py", line 87, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster/_core/execution/plan/compute.py", line 193, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster/_core/execution/plan/compute.py", line 162, in _yield_compute_results
+    for event in iterate_with_context(
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster/_utils/__init__.py", line 490, in iterate_with_context
+    next_output = next(iterator)
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/my_dagster/my_dagster/assets.py", line 9, in E_com_analysis_dbt_assets
+    yield from dbt.cli(["build"], context=context).stream()
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster_dbt/core/dbt_event_iterator.py", line 202, in __next__
+    return next(self._inner_iterator)
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster_dbt/core/dbt_cli_invocation.py", line 274, in _stream_asset_events
+    for event in self.stream_raw_events():
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster_dbt/core/dbt_cli_invocation.py", line 367, in stream_raw_events
+    self._raise_on_error()
+  File "/Users/opeyemifaronbi/Desktop/dbt-dagster/venv/lib/python3.10/site-packages/dagster_dbt/core/dbt_cli_invocation.py", line 460, in _raise_on_error
+    raise error
+[0m
