@@ -1,0 +1,14 @@
+Running with dbt=1.9.1
+Registered adapter: snowflake=1.9.0
+Found 23 models, 6 data tests, 8 sources, 471 macros
+
+Concurrency: 4 threads (target='dev')
+
+1 of 1 START sql view model AIR.booking_trends ................................. [RUN]
+1 of 1 OK created sql view model AIR.booking_trends ............................ [[32mSUCCESS 1[0m in 0.53s]
+
+Finished running 1 view model in 0 hours 0 minutes and 2.36 seconds (2.36s).
+
+[32mCompleted successfully[0m
+
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1

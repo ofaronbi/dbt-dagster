@@ -1,0 +1,19 @@
+Running with dbt=1.9.1
+Registered adapter: snowflake=1.9.0
+Found 23 models, 6 data tests, 8 sources, 471 macros
+
+Concurrency: 4 threads (target='dev')
+
+1 of 1 START sql view model AIR.booking_trends ................................. [RUN]
+1 of 1 ERROR creating sql view model AIR.booking_trends ........................ [[31mERROR[0m in 0.24s]
+
+Finished running 1 view model in 0 hours 0 minutes and 1.99 seconds (1.99s).
+
+[31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+
+  Database Error in model booking_trends (models/RAW_LOCAL/Booking_Trends/booking_trends.sql)
+  002140 (42601): SQL compilation error:
+  Unknown function FORMAT
+  compiled code at target/E_com_analysis_dbt_assets-402baed-7525ee0/run/E_com_analysis/models/RAW_LOCAL/Booking_Trends/booking_trends.sql
+
+Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1

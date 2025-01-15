@@ -1,0 +1,65 @@
+Running with dbt=1.9.1
+Registered adapter: snowflake=1.9.0
+Found 23 models, 6 data tests, 8 sources, 471 macros
+
+Concurrency: 4 threads (target='dev')
+
+1 of 24 START sql table model ECOM.stg_customer_details ........................ [RUN]
+2 of 24 START sql table model ECOM.stg_product_catalog ......................... [RUN]
+3 of 24 START sql table model ECOM.stg_transactional_sales ..................... [RUN]
+4 of 24 START sql view model AIR.booking_trends ................................ [RUN]
+4 of 24 ERROR creating sql view model AIR.booking_trends ....................... [[31mERROR[0m in 0.28s]
+5 of 24 START sql view model AIR.seat_preferences .............................. [RUN]
+5 of 24 OK created sql view model AIR.seat_preferences ......................... [[32mSUCCESS 1[0m in 0.34s]
+6 of 24 START sql view model AIR.aircraft_utilization .......................... [RUN]
+6 of 24 OK created sql view model AIR.aircraft_utilization ..................... [[32mSUCCESS 1[0m in 0.53s]
+7 of 24 START sql table model AIR.airport_usage ................................ [RUN]
+1 of 24 OK created sql table model ECOM.stg_customer_details ................... [[32mSUCCESS 1[0m in 1.51s]
+8 of 24 START sql view model AIR.average_ticket_price .......................... [RUN]
+3 of 24 OK created sql table model ECOM.stg_transactional_sales ................ [[32mSUCCESS 1[0m in 1.37s]
+9 of 24 START sql table model AIR.flight_performance ........................... [RUN]
+2 of 24 OK created sql table model ECOM.stg_product_catalog .................... [[32mSUCCESS 1[0m in 1.43s]
+10 of 24 START sql view model AIR.revenue_per_flight ........................... [RUN]
+8 of 24 OK created sql view model AIR.average_ticket_price ..................... [[32mSUCCESS 1[0m in 0.32s]
+11 of 24 START sql view model AIR.route_duration ............................... [RUN]
+10 of 24 OK created sql view model AIR.revenue_per_flight ...................... [[32mSUCCESS 1[0m in 0.31s]
+12 of 24 START sql view model AIR.route_performance ............................ [RUN]
+11 of 24 OK created sql view model AIR.route_duration .......................... [[32mSUCCESS 1[0m in 0.26s]
+13 of 24 START sql view model AIR.passenger_bookings ........................... [RUN]
+7 of 24 OK created sql table model AIR.airport_usage ........................... [[32mSUCCESS 1[0m in 1.03s]
+12 of 24 OK created sql view model AIR.route_performance ....................... [[32mSUCCESS 1[0m in 0.47s]
+14 of 24 START sql view model ECOM.dim_customers ............................... [RUN]
+15 of 24 START test not_null_stg_transactional_sales_TRANSACTION_ID ............ [RUN]
+9 of 24 OK created sql table model AIR.flight_performance ...................... [[32mSUCCESS 1[0m in 0.93s]
+13 of 24 OK created sql view model AIR.passenger_bookings ...................... [[32mSUCCESS 1[0m in 0.46s]
+16 of 24 START test unique_stg_transactional_sales_TRANSACTION_ID .............. [RUN]
+17 of 24 START sql view model ECOM.dim_products ................................ [RUN]
+15 of 24 PASS not_null_stg_transactional_sales_TRANSACTION_ID .................. [[32mPASS[0m in 0.29s]
+14 of 24 OK created sql view model ECOM.dim_customers .......................... [[32mSUCCESS 1[0m in 0.44s]
+18 of 24 START test not_null_dim_customers_CUSTOMER_ID ......................... [RUN]
+19 of 24 START test unique_dim_customers_CUSTOMER_ID ........................... [RUN]
+17 of 24 OK created sql view model ECOM.dim_products ........................... [[32mSUCCESS 1[0m in 0.36s]
+16 of 24 PASS unique_stg_transactional_sales_TRANSACTION_ID .................... [[32mPASS[0m in 0.42s]
+20 of 24 START sql view model ECOM.fact_sales .................................. [RUN]
+18 of 24 PASS not_null_dim_customers_CUSTOMER_ID ............................... [[32mPASS[0m in 0.42s]
+20 of 24 OK created sql view model ECOM.fact_sales ............................. [[32mSUCCESS 1[0m in 0.34s]
+21 of 24 START sql view model ECOM.sales_summary_by_date ....................... [RUN]
+19 of 24 PASS unique_dim_customers_CUSTOMER_ID ................................. [[32mPASS[0m in 0.46s]
+22 of 24 START sql view model ECOM.customer_segmentation ....................... [RUN]
+21 of 24 OK created sql view model ECOM.sales_summary_by_date .................. [[32mSUCCESS 1[0m in 0.42s]
+22 of 24 OK created sql view model ECOM.customer_segmentation .................. [[32mSUCCESS 1[0m in 0.38s]
+23 of 24 START test not_null_sales_summary_by_date_total_quantity .............. [RUN]
+24 of 24 START test not_null_sales_summary_by_date_total_sales ................. [RUN]
+23 of 24 PASS not_null_sales_summary_by_date_total_quantity .................... [[32mPASS[0m in 0.41s]
+24 of 24 PASS not_null_sales_summary_by_date_total_sales ....................... [[32mPASS[0m in 0.46s]
+
+Finished running 5 table models, 6 data tests, 13 view models in 0 hours 0 minutes and 5.94 seconds (5.94s).
+
+[31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+
+  Database Error in model booking_trends (models/RAW_LOCAL/Booking_Trends/booking_trends.sql)
+  002140 (42601): SQL compilation error:
+  Unknown function DATETRUNC
+  compiled code at target/E_com_analysis_dbt_assets-f2720a8-a03f33c/run/E_com_analysis/models/RAW_LOCAL/Booking_Trends/booking_trends.sql
+
+Done. PASS=23 WARN=0 ERROR=1 SKIP=0 TOTAL=24
